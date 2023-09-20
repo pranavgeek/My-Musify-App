@@ -1,0 +1,106 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    align-items: center; 
+    margin: 1rem;
+    background-color: rgb(224, 53, 11);
+    overflow-x: hidden;
+}
+
+.header img {
+    height: 50px;
+    padding: 1.5rem;
+}
+.header h1 {
+    display: inline; 
+    margin: 0;
+    color: whitesmoke; 
+    font-size: 2rem;
+}
+
+.pg {
+    display: block;
+    font-size: smaller;
+}
+
+#form {
+    margin: 5rem;
+    margin-top: 2rem;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input[type="text"] {
+    height: 25px;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+input[type="button"] {
+    height: 40px;
+    width: 80px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    float: right;
+    background-color: black;
+    border: 0;
+    color: white;
+    border-radius: 10px;
+}
+
+#newSong {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    background-color: black;
+    color: white;
+    left: 0px;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.songBox {
+    background-color: rgb(224, 53, 11);
+    color: white;
+    left: 0px;
+    height: 50px;
+    padding: 1rem;
+    margin: 1rem;
+    list-style: none;
+    transform: translateX(0rem);
+    animation: adding .3s ease-in-out;
+}
+
+@keyframes adding {
+    0% {
+        transform: translateX(-100rem);
+    }
+    75% {
+        transform: translateX(2rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
+}
+
+.songT {
+    margin-top: -5px;
+}
+
+.songA {
+    margin-top: -5px;
+}
+
+
+@media screen and (min-width: 500px) {
+    
+    input[type="button"] {
+        float: left;
+    }
+}
