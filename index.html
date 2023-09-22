@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Music App">
+    <meta name="apple-mobile-web-app-title" content="Music App" />
     <link rel="stylesheet" href="main.css" />
     <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/logos/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/logos/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/logos/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/logos/favicon-16x16.png"
+    />
     <link rel="mask-icon" href="/logos/safari-pinned-tab.svg" color="#333333" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-TileImage" content="/logos/mstile-144x144.png" />
@@ -25,15 +39,16 @@
     <br />
     <div id="newSong">New Song</div>
     <div id="form">
-      <label for="Title">Title</label><br />
+      <label for="Title">Title</label><span class="asterisk"> *</span><br />
+      <span id="error">This field is required.</span>
       <input type="text" id="title" name="Title" /><br /><br />
-      <label for="Artist">Artist</label><br />
+      <label for="Artist">Artist</label><span class="asterisk"> *</span><br />
+      <span id="error2">This field is required.</span>
       <input type="text" id="artist" name="Artist" /><br /><br />
       <input type="button" value="Add" id="btn" />
     </div>
     <div id="newSong">List of Songs</div>
     <br />
   </body>
-  <!-- <script src="manifest.json"></script> -->
   <script src="magic.js"></script>
 </html>
