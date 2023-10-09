@@ -1,32 +1,22 @@
-// if ("serviceWorker" in navigator) {
-//   navigator.serviceWorker
-//     .register("/service-worker.js", { scope: "/" })
-//     .then((registration) => {
-//       console.log("Register Success", registration);
-//     })
-//     .catch((error) => {
-//       console.log("Register Failed", error);
-//     });
-// } else {
-//   console.log("Service workers is not supported.");
-// }
+
+window.addEventListener('online', () => {
+    navigator.serviceWorker
+    .register("/service-worker.js", { scope: "/" })
+    .then((registration) => {
+      console.log("Register Success", registration);
+    })
+    .catch((error) => {
+      console.log("Register Failed", error);
+    });
+})
 
 window.addEventListener("load", () => {
-  if (navigator.onLine) {
-    navigator.serviceWorker
-      .register("/service-worker.js", { scope: "/" })
-      .then((registration) => {
-        console.log("Register Success", registration);
-      })
-      .catch((error) => {
-        console.log("Register Failed", error);
-      });
-  } else {
-    offlinepage();
+  if (!navigator.onLine) {
+    offlineMessage(); 
   }
 });
 
-function offlinepage() {
+function offlineMessage() {
   const output = document.getElementById("main-cont");
   output.innerHTML = `
     <div id="offline">
