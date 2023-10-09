@@ -22,6 +22,26 @@
   font-size: 2rem;
 }
 
+main #offline-content {
+  background-color: brown;
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+  color: rgb(251, 94, 94);
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+main #offline-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+main #offline-content p {
+  margin: 0;
+  color: rgb(251, 94, 94);
+}
+
 .pg {
   display: block;
   font-size: smaller;
