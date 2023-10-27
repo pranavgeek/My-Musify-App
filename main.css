@@ -100,12 +100,38 @@ input[type="button"] {
   background-color: rgb(224, 53, 11);
   color: white;
   left: 0px;
-  height: 50px;
+  height: 100px;
   padding: 1rem;
   margin: 1rem;
   list-style: none;
   transform: translateX(0rem);
   animation: adding 0.3s ease-in-out;
+}
+
+.removeBtn {
+  background-color: black;
+  width: 6rem;
+  height: 2rem;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.likeBtn {
+  background-color: green;
+  width: 6rem;
+  height: 2rem;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  float: right;
+}
+
+.likeCounter {
+  float: right;
+  transform: translateY(-5rem) translateX(5.5rem);
 }
 
 @keyframes adding {
