@@ -118,6 +118,10 @@ input[type="button"] {
   font-size: 1.2rem;
 }
 
+.addAni {
+  animation:removing 0.3s ease-in-out;
+}
+
 .likeBtn {
   background-color: green;
   width: 6rem;
@@ -143,6 +147,18 @@ input[type="button"] {
   }
   100% {
     transform: translateX(0rem);
+  }
+}
+
+@keyframes removing {
+  0% {
+    transform: translateX(0rem);
+  }
+  75% {
+    transform: translateX(2rem);
+  }
+  100% {
+    transform: translateX(100rem);
   }
 }
 

@@ -63,11 +63,12 @@ MusifyApp.open()
         function deleteSong() {
           MusifyApp.deleteByTitle(titleV)
             .then(() => {
-              songBox.remove();
+                songBox.remove();
             })
             .catch((error) => {
               console.error("Error deleting song: " + error);
             });
+            songBox.classList.add('addAni')
         }
 
         songBox.className = "songBox";
